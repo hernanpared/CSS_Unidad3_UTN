@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  color: #000;
+  background: #332f29;
+  font-size: 100%;
+}
+#contenedor {
+  width: 800px;
+  background: #8fa68e;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+nav {
+  background: #cc3910;
+  float: left;
+  width: 160px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: #f1f2c0;
+  text-decoration: none;
+}
+section {
+  background: #f1f2c0;
+  float: left;
+  margin: 0 0 0 25px;
+  width: 400px;
+}
+aside {
+  background: #ccc59e;
+  float: right;
+  width: 190px;
+}
+
+@media (max-width: 800px) {
+  #contenedor {
+    width: auto;
+  }
+
+  nav {
+    width: 100%;
+    float: none;
+  }
+
+  nav ul {
+    padding: 0; /* Elimina el padding por defecto de las listas */
+  }
+
+  nav li {
+    text-align: left; /* Centra los enlaces en su contenedor */
+  }
+
+  section,
+  aside {
+    width: 100%; /* Ocupan el ancho completo */
+    float: none; /* Anula la propiedad float previa */
+    margin: 0; /* Anula los márgenes previos */
+  }
+
+  h1,
+  section h2,
+  aside h2 {
+    text-align: left; /* Centra los títulos */
+  }
+}
